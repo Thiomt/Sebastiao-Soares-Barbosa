@@ -1,0 +1,34 @@
+body{
+    background-image: url("http://empresasxanxere.com.br/images/uploads/empresas/639/engenharia__big.jpg");
+    background-size:100vw auto ;
+    font-family: Britannic Bold;
+  }
+  .menu{
+    background-color: white;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around
+  }
+  .menu li{
+    list-style: NONE
+  }
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle{
+    font-style: italic;
+  }
+  
+  
