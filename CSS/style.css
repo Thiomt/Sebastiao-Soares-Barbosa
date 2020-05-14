@@ -1,10 +1,47 @@
+*{ /*reset das configurações parão do navegador*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-    background-image: url("http://empresasxanxere.com.br/images/uploads/empresas/639/engenharia__big.jpg");
-    background-size:100vw auto ;
-    font-family: Britannic Bold;
+    background-image: linear-gradient(rgba(0, 0, 205, 0.5), rgba(255, 255, 0, 0.5)),
+    url("../img/43.jpg");
+    background-size: 210vh auto;
+    /*background: rgb(128, 127, 127) transparent;*/
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10px;
   }
+  /*breacpoint: ponto de quebra de págna*/
+  /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+   @media(min-width:400px){
+    body{
+      font-size: 14px;
+    }
+  }
+  @media(min-width:600px){
+    body{
+      font-size: 18px;
+    }
+  }
+  @media(min-width:1200px){
+    body{
+      font-size: 22px;
+    }
+  }
+
+  
+  header{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  } 
   .menu{
-    background-color: white;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu ul {
@@ -12,7 +49,12 @@ body{
     justify-content: space-around
   }
   .menu li{
-    list-style: NONE
+    list-style: none;
+  }
+  .menu a{
+    /*background-color:blueviolet; auxilio da cor para ver o elemento;*/
+    display: block;
+    padding: 10px 40px; 
   }
   a {
     color: teal;
@@ -23,12 +65,59 @@ body{
   }
   .site-subtitle,
   .site-title {
-    color: whitesmoke;
+    color:whitesmoke;
     text-align: center;
   }
   
   .site-subtitle{
+    font-family: 'Comic Neue', cursive;
     font-style: italic;
+    line-height: 1.1em;
   }
-  
+  .site-title{
+    font-size: 3em;
+    /*font-family: 'Comic Neue', cursive;
+    font-family: 'Playfair Display', serif;*/
+    font-family: 'Source Code Pro', monospace;
+  }
+  .portfólio{
+    padding: 3em;
+    height: 100vh;
+  }
+  .portfólio h2 {
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+  .portfólio .grid{
+    display: grid;
+    gap: 2em;
+  }
+  @media (min-width: 560px){
+    .portfólio .grid{
+      grid-template-columns: 240px 240px;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 880px){
+    .portfólio .grid{
+      grid-template-columns: repeat(3,260px );
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 4em - 48px - 1.5em);
+    }
+  }
+
+  .portfólio figure{
+    text-align: center;
+  }
+  .img-portfolio{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px; /*aredondamento da porda da imagem*/
+  }
+
   
